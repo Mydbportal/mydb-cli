@@ -15,7 +15,7 @@ const spinner = yoctoSpinner({ text: "mydbportal…" }).start();
 program
   .name("mydbportal-cli")
   .description("CLI to control your mydbportal databases")
-  .version("0.3.5");
+  .version("0.4.1");
 
 //list databases command
 program
