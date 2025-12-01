@@ -29,7 +29,7 @@ program
     spinner.start();
     const res = await fetch(`${mydbportalUrl}/api/cli`, {
       headers: {
-        Cookie: `authjs.session-token=${token}`,
+        Cookie: `__Secure-authjs.session-token=${token}`,
       },
     });
 
@@ -61,7 +61,7 @@ program
 
     const results = await fetch(`${mydbportalUrl}/api/cli/${answer.database}`, {
       headers: {
-        Cookie: `authjs.session-token=${token}`,
+        Cookie: `__Secure-authjs.session-token=${token}`,
       },
     });
     spinner.success();
@@ -81,7 +81,7 @@ program
     spinner.start();
     const res = await fetch(`${mydbportalUrl}/api/cli`, {
       headers: {
-        Cookie: `authjs.session-token=${token}`,
+        Cookie: `__Secure-authjs.session-token=${token}`,
       },
     });
     const jsons: any = await res.json();
@@ -120,7 +120,7 @@ program
     const result = await fetch(`${mydbportalUrl}/api/cli`, {
       method: "POST",
       headers: {
-        Cookie: `authjs.session-token=${token}`,
+        Cookie: `__Secure-authjs.session-token=${token}`,
       },
       body: formData,
     });
